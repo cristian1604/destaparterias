@@ -1,0 +1,6 @@
+Este es un proyecto base para trabajar con la biblioteca SFML (http://www.sfml-dev.org).
+
+La documentacion de SFML se encuentra en el directorio MinGW/SFML/doc de ZinjaI.
+
+En la distribucion para Windows el enlazado de la biblioteca SFML se realiza de forma estatica, para realizarlo contra la version dinamica debe quitar el "-s" al final del nombre de cada libreria en las opciones de enlazado. En este caso tambien sera necesario colocar las dlls que estan en el directorio MinGW/SFML-1.6/lib en un lugar donde el ejecutable pueda encontrarlas (por ejemplo, en la carpeta del proyecto si el ejecutable la utiliza como directorio de trabajo).
+
