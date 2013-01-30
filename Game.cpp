@@ -5,6 +5,9 @@
 #include "fondo.h"
 //hola mundo
 
+//cristian estuvo aca rompiendo todo desde linux y ahora commiteo con 
+este comentario crazy =P
+
 #define MAX_PUNTAJE 1500
 
 using namespace std;
@@ -216,12 +219,14 @@ void Game::updateGame(float t) {
 	if (Input.IsJoystickButtonDown(0, 0) || Input.IsJoystickButtonDown(0, 1) || Input.IsJoystickButtonDown(0, 2) || Input.IsJoystickButtonDown(0, 3))
 	{
 		Disparar();
-	}
+	}
+
 
 	this->XAxis = Input.GetJoystickAxis(0, sf::Joy::AxisX);
 	this->YAxis = Input.GetJoystickAxis(0, sf::Joy::AxisY);
 	
-	nave.moverPersonaje(XAxis/20,YAxis/20);
+	nave.moverPersonaje(XAxis/20,YAxis/20);
+
 	
 	
 	if (puntaje > MAX_PUNTAJE and jefe->GetVida() < 1)
@@ -484,7 +489,8 @@ void Game::startGame() {
 	win.SetFramerateLimit(60);
 	jefe = new Jefe(text_jefe,10.0f,Vector2f(700,200));
 	jefe->sp.SetPosition(700,200);	
-	jefe->saltando = false;	//Bucle principal del juego
+	jefe->saltando = false;
+	//Bucle principal del juego
 	fondo_sound.Play();
 	while(win.IsOpened()) {
 		//Obtiene el tiempor transcurrido entre frame y frame
