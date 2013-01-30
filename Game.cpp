@@ -3,10 +3,11 @@
 #include <sstream>
 #include <iostream>
 #include "fondo.h"
-//hola mundo
 
-//cristian estuvo aca rompiendo todo desde linux y ahora commiteo con 
-este comentario crazy =P
+
+///  ESTE SOURCE ES COMPILABLE TANTO EN WINDOWS COMO EN LINUX
+///          empleando gcc o mingw va como piña!
+
 
 #define MAX_PUNTAJE 1500
 
